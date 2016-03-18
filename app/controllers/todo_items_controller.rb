@@ -15,7 +15,7 @@ class TodoItemsController < ApplicationController
   def complete
     #when the user clicks complete, we will get the current time and put that value in the completed_at field in the database
     @todo_item.update_attribute(:completed_at, Time.now)
-    redirect_to @todo_list
+    redirect_to @todo_list, notice: "Todo item completed!"
   end
   
   
