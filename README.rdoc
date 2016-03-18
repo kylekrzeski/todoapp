@@ -1,9 +1,9 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Goal: to create an appealing task tracker / to do app 
 
-Things you may want to cover:
+
+Going to be included in this readme:
 
 * Ruby version
 

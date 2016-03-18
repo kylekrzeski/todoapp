@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  #this makes the todo_items route always following the todo_list route
+  #  site.com/todo_list_name/todo_item_name
+  resources :todo_lists do
+    resources :todo_items
+  end
+  
+  
+  root "todo_lists#index"
+  
+  
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
