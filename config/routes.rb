@@ -2,7 +2,13 @@ Rails.application.routes.draw do
   #this makes the todo_items route always following the todo_list route
   #  site.com/todo_list_name/todo_item_name
   resources :todo_lists do
-    resources :todo_items
+    resources :todo_items do
+      member do
+        #makes a complete_todo_list_todo_item PATH
+        #also calls the "complete" method on the todo_item controller
+        patch :complete
+      end
+    end
   end
   
   
