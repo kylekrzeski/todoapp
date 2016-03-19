@@ -1,6 +1,8 @@
 <% @todo_lists.each do |list| %>
   <div class="index_row clearfix">
     <h2 class="todo_list_title">
+      
+      <i class="fa fa-file-text-o fa-lg"></i>
       <%= link_to list.title, list %>
     </h2>
     <p class="todo_list_sub_title"><%= list.description %></p>
