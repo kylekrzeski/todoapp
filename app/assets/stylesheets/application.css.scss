@@ -10,9 +10,11 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+ 
+ // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
  $white_opaque: rgba(250, 250, 250, .3);
  $dark: #1F7972;
@@ -57,7 +59,7 @@ body {
 }
 
 .container {
-	width: 75%;
+	width: 98%;
 	max-width: 750px;
 	background: $white_opaque;
 	margin: 3em auto 0 auto;
@@ -180,6 +182,7 @@ body {
 	}
 }
 
+
 .forms {
 	padding: 0 5%;
 }
@@ -217,3 +220,4 @@ input[type="submit"] {
 	}
 }
 ::-webkit-input-placeholder { color: $dark; }
+
